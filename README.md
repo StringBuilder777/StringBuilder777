@@ -6,12 +6,6 @@
 
 ### 🚀 Un poco sobre mí:
 
-* 🔭 **Actualmente trabajando en:** Un proyecto de gestión de inventario usando **Django REST Framework** y **Next.js**.
-* 🌱 **Actualmente aprendiendo:** Profundizando en **Docker** y **Kubernetes** para despliegues más robustos.
-* 👯 **Busco colaborar en:** Proyectos de código abierto relacionados con el Machine Learning o la accesibilidad web.
-* 🤔 **Necesito ayuda con:** Optimización de consultas complejas en **SQL**. (¡Cualquier consejo es bienvenido!)
-* 💬 **Pregúntame sobre:** Desarrollo web con **JavaScript**, **Python** o configuración de entornos de desarrollo.
-
 ### 💡 Mi Stack Tecnológico:
 
 | Categoría | Tecnologías |
@@ -32,4 +26,3 @@
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=StringBuilder777&show_icons=true&theme=radical&hide_border=true)
 
-⚡ **Dato curioso:** Mi primer programa fue un simple "Hola Mundo" en C, ¡y me tomó dos días compilarlo!

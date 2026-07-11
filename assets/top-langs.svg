@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-labelledby="title desc">
+  <title id="title">Lenguajes más utilizados</title>
+  <desc id="desc">Tarjeta temporal que será reemplazada automáticamente por GitHub Actions.</desc>
+  <defs>
+    <linearGradient id="bar" x1="0" x2="1">
+      <stop offset="0" stop-color="#F75C7E"/>
+      <stop offset="0.58" stop-color="#F8D866"/>
+      <stop offset="1" stop-color="#61DAFB"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="493" height="193" rx="12" fill="#0D1117" stroke="#30363D"/>
+  <text x="24" y="48" fill="#F75C7E" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700">Lenguajes más utilizados</text>
+  <rect x="24" y="76" width="447" height="10" rx="5" fill="#21262D"/>
+  <rect x="24" y="76" width="447" height="10" rx="5" fill="url(#bar)">
+    <animate attributeName="width" values="0;447" dur="1.2s" fill="freeze"/>
+  </rect>
+  <text x="24" y="120" fill="#C9D1D9" font-family="Segoe UI, sans-serif" font-size="15">La tarjeta real aparecerá después del primer workflow.</text>
+  <text x="24" y="148" fill="#8B949E" font-family="Segoe UI, sans-serif" font-size="13">Usa datos públicos y se actualiza cada día.</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-labelledby="title desc">
+  <title id="title">Estadísticas de GitHub</title>
+  <desc id="desc">Tarjeta temporal que será reemplazada automáticamente por GitHub Actions.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#F75C7E"/>
+      <stop offset="1" stop-color="#F8D866"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="493" height="193" rx="12" fill="#0D1117" stroke="#30363D"/>
+  <rect x="24" y="28" width="64" height="6" rx="3" fill="url(#accent)"/>
+  <text x="24" y="72" fill="#F75C7E" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700">Estadísticas de GitHub</text>
+  <text x="24" y="108" fill="#C9D1D9" font-family="Segoe UI, sans-serif" font-size="15">Se generan y actualizan automáticamente.</text>
+  <text x="24" y="136" fill="#8B949E" font-family="Segoe UI, sans-serif" font-size="13">Ejecuta el workflow “Update profile visuals”.</text>
+  <circle cx="430" cy="97" r="23" fill="none" stroke="#F75C7E" stroke-width="6" stroke-dasharray="90 55">
+    <animateTransform attributeName="transform" type="rotate" from="0 430 97" to="360 430 97" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

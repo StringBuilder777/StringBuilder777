@@ -1,0 +1,69 @@
+name: Update profile visuals
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - .github/workflows/profile-assets.yml
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v6
+
+      - name: Generate GitHub stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: >-
+            username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&hide_rank=true&bg_color=0D1117&title_color=F75C7E&text_color=C9D1D9&icon_color=F8D866&ring_color=F75C7E&locale=es
+          path: assets/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: >-
+            username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=F75C7E&text_color=C9D1D9
+          path: assets/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/contribution-snake.svg?palette=github-light&color_snake=#F75C7E
+            assets/contribution-snake-dark.svg?palette=github-dark&color_snake=#F75C7E
+
+      - name: Commit generated visuals
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+
+          if git diff --cached --quiet; then
+            echo "Profile visuals are already up to date."
+            exit 0
+          fi
+
+          git commit -m "chore: update profile visuals"
+          git push

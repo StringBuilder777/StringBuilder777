@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="150" viewBox="0 0 900 150" role="img" aria-labelledby="title desc">
+  <title id="title">Animación de contribuciones</title>
+  <desc id="desc">Vista temporal clara que será reemplazada por la serpiente de contribuciones.</desc>
+  <rect width="900" height="150" rx="14" fill="#FFFFFF"/>
+  <path d="M45 82 C170 18 290 132 420 70 S675 22 855 76" fill="none" stroke="#F75C7E" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 14">
+    <animate attributeName="stroke-dashoffset" from="0" to="-64" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="45" cy="82" r="10" fill="#F8D866">
+    <animate attributeName="r" values="8;12;8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="450" y="132" text-anchor="middle" fill="#57606A" font-family="Segoe UI, sans-serif" font-size="13">La serpiente real se genera con GitHub Actions.</text>
+</svg>
